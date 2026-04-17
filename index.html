@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f7fb;
+    color: #333;
 }
 
 /* HEADER */
@@ -22,38 +22,35 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 38px;
 }
 
-header p {
-    margin: 8px 0;
-}
-
-/* SECTION */
+/* SECTION COMMON */
 section {
-    padding: 40px;
+    padding: 50px 20px;
+}
+
+.container {
     max-width: 1000px;
     margin: auto;
 }
 
-h2 {
-    color: #1e3c72;
-    border-bottom: 3px solid #1e3c72;
-    padding-bottom: 5px;
-}
+/* DIFFERENT SECTION COLORS */
+.about { background: #f4f7fb; }
+.education { background: #e3f2fd; }
+.skills { background: #e8f5e9; }
+.projects { background: #fff3e0; }
+.experience { background: #f3e5f5; }
+.certifications { background: #e0f7fa; }
+.interests { background: #fce4ec; }
 
-/* CARD DESIGN */
+/* CARD */
 .card {
     background: white;
     padding: 20px;
-    margin: 20px 0;
+    margin-top: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-6px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* PROJECT GRID */
@@ -63,26 +60,11 @@ h2 {
     gap: 20px;
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #2a5298;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #1e3c72;
-}
-
 /* FOOTER */
 footer {
-    text-align: center;
     background: #1e3c72;
     color: white;
+    text-align: center;
     padding: 20px;
 }
 </style>
@@ -96,118 +78,119 @@ footer {
     <p>📧 devikadineshe8@gmail.com | 📞 +91 8089166527</p>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-        M.Tech candidate specializing in VLSI and Embedded Systems with strong interest in 
-        real-time applications, PCB design, and hardware-software integration. 
-        Skilled in microcontroller programming, signal conditioning, and system-level circuit design.
-        </p>
-    </div>
+<!-- ABOUT -->
+<section class="about">
+<div class="container">
+<h2>About Me</h2>
+<div class="card">
+<p>
+M.Tech student specializing in VLSI and Embedded Systems with strong interest in 
+real-time applications, PCB design, and hardware-software integration.
+</p>
+</div>
+</div>
 </section>
 
-<section>
-    <h2>Education</h2>
-    <div class="card">
-        <p><b>M.Tech – VLSI & Embedded Systems</b><br>
-        Mar Athanasius College of Engineering (2024–2026)<br>
-        CGPA: 8.07</p>
+<!-- EDUCATION -->
+<section class="education">
+<div class="container">
+<h2>Education</h2>
+<div class="card">
+<p><b>M.Tech – VLSI & Embedded Systems</b><br>
+Mar Athanasius College of Engineering (2024–2026)<br>
+CGPA: 8.07</p>
 
-        <p><b>B.Tech – Electronics and Communication Engineering</b><br>
-        Vimal Jyothi Engineering College (2020–2024)<br>
-        CGPA: 8.59</p>
-    </div>
+<p><b>B.Tech – ECE</b><br>
+Vimal Jyothi Engineering College (2020–2024)<br>
+CGPA: 8.59</p>
+</div>
+</div>
 </section>
 
-<section>
-    <h2>Skills</h2>
-    <div class="card">
-        <p><b>Languages:</b> Embedded C, C, Verilog (Basics)</p>
-        <p><b>Tools:</b> Altium Designer, Proteus, LTspice, STM32CubeIDE, Arduino IDE</p>
-        <p><b>Protocols:</b> SPI, UART, I²C</p>
-    </div>
+<!-- SKILLS -->
+<section class="skills">
+<div class="container">
+<h2>Skills</h2>
+<div class="card">
+<p><b>Languages:</b> C, Embedded C, Verilog</p>
+<p><b>Tools:</b> STM32CubeIDE, Altium, Proteus, LTspice</p>
+<p><b>Protocols:</b> SPI, UART, I2C</p>
+</div>
+</div>
 </section>
 
-<section>
-    <h2>Projects</h2>
-    <div class="grid">
+<!-- PROJECTS -->
+<section class="projects">
+<div class="container">
+<h2>Projects</h2>
 
-        <div class="card">
-            <h3>Solar Panel Emulator</h3>
-            <p>
-            Real-time solar panel emulator using STM32 and buck converter.
-            Designed PCB integrating power electronics and sensors.
-            Supports IV curve generation and monitoring.
-            </p>
-        </div>
+<div class="grid">
 
-        <div class="card">
-            <h3>IoT Temperature Monitoring</h3>
-            <p>
-            STM32 + ESP8266 based system for real-time temperature monitoring
-            with cloud connectivity.
-            </p>
-        </div>
+<div class="card">
+<h3>Solar Panel Emulator</h3>
+<p>STM32-based emulator using buck converter for IV curve generation.</p>
+</div>
 
-        <div class="card">
-            <h3>Railway Track Robot</h3>
-            <p>
-            IoT-based robot to detect cracks in railway tracks and send location data.
-            </p>
-        </div>
+<div class="card">
+<h3>IoT Temperature Monitoring</h3>
+<p>STM32 + ESP8266 system for cloud-based monitoring.</p>
+</div>
 
-        <div class="card">
-            <h3>Heart Pulse Monitor</h3>
-            <p>
-            Pulse sensor-based system to measure BPM with alert system and IoT logging.
-            </p>
-        </div>
+<div class="card">
+<h3>Railway Track Robot</h3>
+<p>IoT robot for crack detection and tracking.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Heart Pulse Monitor</h3>
+<p>Real-time BPM measurement with alert system.</p>
+</div>
+
+</div>
+</div>
 </section>
 
-<section>
-    <h2>Experience</h2>
-    <div class="card">
-        <p>
-        <b>Embedded Systems Internship – CSEED (2025)</b><br>
-        Worked with STM32 interfacing, Wi-Fi, Bluetooth, NodeMCU,
-        and learned RTOS concepts and real-time task scheduling.
-        </p>
-    </div>
+<!-- EXPERIENCE -->
+<section class="experience">
+<div class="container">
+<h2>Experience</h2>
+<div class="card">
+<p>
+Embedded Systems Internship (CSEED 2025)<br>
+Worked with STM32, IoT communication, and RTOS basics.
+</p>
+</div>
+</div>
 </section>
 
-<section>
-    <h2>Certifications</h2>
-    <div class="card">
-        <ul>
-            <li>Embedded Systems Certification</li>
-            <li>Salesforce Certification</li>
-            <li>Python for Data Science & Machine Learning</li>
-        </ul>
-    </div>
+<!-- CERTIFICATIONS -->
+<section class="certifications">
+<div class="container">
+<h2>Certifications</h2>
+<div class="card">
+<ul>
+<li>Embedded Systems Certification</li>
+<li>Salesforce Certification</li>
+<li>Python for Data Science & ML</li>
+</ul>
+</div>
+</div>
 </section>
 
-<section>
-    <h2>Areas of Interest</h2>
-    <div class="card">
-        <p>
-        Embedded Systems | IoT | Power Electronics | Renewable Energy Systems | PCB Design
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>Links</h2>
-    <div class="card">
-        <a href="#" class="btn">GitHub</a>
-        <a href="#" class="btn">LinkedIn</a>
-    </div>
+<!-- INTERESTS -->
+<section class="interests">
+<div class="container">
+<h2>Areas of Interest</h2>
+<div class="card">
+<p>
+Embedded Systems | IoT | Power Electronics | Renewable Energy | PCB Design
+</p>
+</div>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Devika Dinesh E | Portfolio</p>
+<p>© 2026 Devika Dinesh E</p>
 </footer>
 
 </body>

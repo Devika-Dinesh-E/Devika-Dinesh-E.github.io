@@ -123,9 +123,11 @@ footer {
         <img src="SMPS_3D_BOTTOM.PNG"style="width:100%; border-radius:8px;">>
     </div>
             <p>
-            Designed a real-time solar panel emulator using STM32 and buck converter.  
-            Developed PCB integrating power electronics and sensors for IV curve generation 
-            and renewable energy applications.
+            This project focuses on the design and development of a real-time solar panel emulator using an STM32 microcontroller. The system begins with an AC input, which is rectified and boosted using a PFC-based boost converter to obtain a high-voltage DC supply. This is followed by an SMPS stage to generate a stable intermediate voltage.
+
+A buck converter, controlled by PWM signals from the STM32, is used to produce a variable output that mimics the I–V characteristics of a solar panel. Voltage and current sensors continuously monitor the output and provide feedback to the STM32, enabling closed-loop control for accurate emulation.
+
+The system also includes a display interface and mobile connectivity for real-time monitoring and control. This emulator provides a flexible and cost-effective platform for testing photovoltaic systems without the need for actual solar panels.
             </p>
         </div>
 

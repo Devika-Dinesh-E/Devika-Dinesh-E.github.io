@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anulakshmi C | Portfolio</title>
+<title>Devika Dinesh | Portfolio</title>
 
 <style>
 body {
@@ -52,6 +52,12 @@ h2 {
     background: #233554;
 }
 
+.project-img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -72,30 +78,28 @@ footer {
 <body>
 
 <header>
-    <h1>Anulakshmi C</h1>
-    <p>Embedded Systems & PCB Design Engineer</p>
-    <p>STM32 | IoT | Real-Time Systems</p>
+    <h1>Devika Dinesh E</h1>
+    <p>M.Tech | VLSI & Embedded Systems</p>
+    <p>STM32 | IoT | PCB Design</p>
 </header>
 
 <section class="section">
     <h2>About</h2>
     <p>
-       I am an M.Tech student specializing in VLSI and Embedded Systems with hands-on experience in STM32-based system design, PCB development, and real-time embedded applications.
-
-I have worked on projects involving sensor interfacing, motor control, and IoT systems, including an STM32-based control system developed during my internship at DRDO–NPOL.
-
-I am passionate about building reliable hardware solutions and integrating embedded systems for real-world applications.
+    M.Tech student specializing in VLSI and Embedded Systems with strong interest in 
+    real-time applications, PCB design, and hardware-software integration. 
+    Experienced in STM32-based system design, IoT communication, and embedded development.
     </p>
 </section>
 
 <section class="section">
     <h2>Skills</h2>
     <div class="card-container">
-        <div class="card">STM32, Arduino, ESP</div>
-        <div class="card">Embedded C, Verilog</div>
-        <div class="card">PCB Design (Altium)</div>
-        <div class="card">UART, SPI, I2C, Ethernet</div>
-        <div class="card">RTOS Concepts</div>
+        <div class="card">Embedded C, C, Verilog</div>
+        <div class="card">STM32CubeIDE, Arduino IDE</div>
+        <div class="card">Altium Designer, Proteus, LTspice</div>
+        <div class="card">SPI, UART, I2C</div>
+        <div class="card">PCB Design</div>
         <div class="card">IoT Systems</div>
     </div>
 </section>
@@ -104,74 +108,68 @@ I am passionate about building reliable hardware solutions and integrating embed
     <h2>Projects</h2>
     <div class="card-container">
 
-          <div class="card">
-            <h3>Winch Control System</h3>
-           <p>
-Developing an STM32-based control system for submarine sonar winch at DRDO–NPOL using RTOS.  
-Implemented VFD motor control, Auto/Manual modes, and safety interlocks.  
-Integrated Ethernet communication using TCP/UDP protocols.
-</p>
-        </div>
         <div class="card">
-            <h3>Digital Ammeter</h3>
-             <img src="Ammeter_schematicsheet_1.png" style="width:100%; border-radius:8px;">
-             <img src="Ammeter_schematicsheet_2.png" style="width:100%; border-radius:8px;">
-             <img src="Digital_ammeter_PCB.jpeg" style="width:100%; border-radius:8px;">
-             <img src="digital ammeter_pcb2.png" style="width:100%; border-radius:8px;">
+            <h3>Solar Panel Emulator</h3>
+            <img src="solar_emulator.png" class="project-img">
             <p>
-Designed a PCB-based digital ammeter using MAX4172 and MCP3425 for precise current measurement.  
-Implemented STM32 for real-time data processing and display control.  
-Displayed output on a multiplexed 7-segment LED with stable readings.
-</p>
+            Designed a real-time solar panel emulator using STM32 and buck converter.  
+            Developed PCB integrating power electronics and sensors for IV curve generation 
+            and renewable energy applications.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Grid Monitoring System</h3>
-             <img src="Grid_parameter_monitoring_system_sheet_1.png" style="width:100%; border-radius:8px;">
-             <img src="Grid_parameter_monitoring_system_sheet_2.png" style="width:100%; border-radius:8px;">
-             <img src="Grid_monitoring_system_PCB.png" style="width:100%; border-radius:8px;">
-             <img src="Grid_parameter_monitoring_system_PCB2.png" style="width:100%; border-radius:8px;">
-           <p>
-Developed a real-time system to measure voltage, current, and frequency using STM32.  
-Used signal conditioning circuits for accurate sensing of electrical parameters.  
-Displayed live data on an LCD for continuous grid monitoring.
-</p>
+            <h3>IoT Temperature Monitoring System</h3>
+            <img src="iot_temp.png" class="project-img">
+            <p>
+            Designed a PCB-based system using STM32 and ESP8266 for real-time 
+            temperature monitoring and cloud connectivity.
+            </p>
         </div>
 
         <div class="card">
-            <h3>IoT Pet Feeder</h3>
-           <p>
-Built an IoT-based automated pet feeding system using ESP module.  
-Enabled remote scheduling and control through a mobile application.  
-Implemented real-time monitoring and automation features.
-</p>
+            <h3>Railway Track Inspecting Robot</h3>
+            <img src="robot.png" class="project-img">
+            <p>
+            Developed an IoT-based robot to detect cracks in railway tracks 
+            and provide location data through a mobile application.
+            </p>
         </div>
 
-       <div class="card">
-  
-    <h3>Heart Pulse Monitoring System</h3>
-    <p>
-    Developed a heart pulse monitoring system for remote health tracking.  
-    Measured pulse rate using sensors and processed data through a microcontroller.  
-    Integrated mobile alerts for real-time monitoring during emergency conditions.
-    </p>
-</div>
+        <div class="card">
+            <h3>Heart Pulse Monitoring System</h3>
+            <img src="pulse.png" class="project-img">
+            <p>
+            Built a system to measure heart rate in BPM using sensors and microcontroller 
+            with alert and IoT monitoring features.
+            </p>
+        </div>
 
+    </div>
+</section>
+
+<section class="section">
+    <h2>Experience</h2>
+    <div class="card">
+        <p>
+        Embedded Systems Internship – CSEED (2025)<br>
+        Worked on STM32 interfacing, Bluetooth, Wi-Fi, NodeMCU communication, 
+        and gained exposure to RTOS concepts and real-time scheduling.
+        </p>
     </div>
 </section>
 
 <section class="section">
     <h2>Contact</h2>
     <ul>
-        <li>Email: anulakshmic158@gmail.com</li>
-        <li>Phone: +91 8714240804</li>
+        <li>Email: devikadineshe8@gmail.com</li>
+        <li>Phone: +91 8089166527</li>
         <li>Location: Kerala, India</li>
-        <li>LinkedIn: linkedin.com/in/anulakshmic</li>
     </ul>
 </section>
 
 <footer>
-    <p>© 2026 Anulakshmi C | Portfolio</p>
+    <p>© 2026 Devika Dinesh E | Portfolio</p>
 </footer>
 
 </body>
